@@ -1,0 +1,13 @@
+.buttonsDiv {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.editarButton {
+    margin-right: 10px;
+}
+
+.ant-collapse-header {
+    font-weight: 600;
+}

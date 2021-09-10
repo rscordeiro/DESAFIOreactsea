@@ -1,0 +1,57 @@
+.listContent {
+    position: absolute;
+    width: 30vw;
+    height: 70vh;
+    left: 3.5vw;
+    top: 22.5vh;
+    padding: 0 25px;
+    padding-top: 15px;
+    
+    background: #4A5043;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.setorItem {
+    position: static;
+    height: 3em;
+    margin-top: 4em;
+}
+
+.ant-collapse {
+    background-color: #85907A;
+    border-color: #85907A;
+}
+
+.ant-collapse-content {
+    background-color: #85907A;
+    border-top: 1px solid #5a6255;
+}
+
+.ant-collapse > .ant-collapse-item {
+    border-bottom: 1px solid #5a6255;
+}
+
+.setoresTitle {
+    position: relative;
+    width: 40vw;
+    height: 2rem;
+    
+    font-family: 'Glory', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    
+    color: #fff;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    color: #fff;
+}

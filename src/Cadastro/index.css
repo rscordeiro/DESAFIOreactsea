@@ -1,0 +1,115 @@
+
+.edicaoContent {
+    position: absolute;
+    width: 60vw;
+    height: 70vh;
+    left: 35vw;
+    top: 22.5vh;
+    padding: 0 25px;
+    padding-top: 15px;
+    
+    background: #4A5043;
+}
+
+.cargoGroup {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.criarTitle {
+    position: relative;
+    width: 40vw;
+    height: 2rem;
+    
+    font-family: 'Glory', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    
+    color: #fff;
+}
+
+.nomeLabel {
+    position: relative;
+    display: block;
+
+    font-family: 'Glory', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #fff;
+}
+
+.inputSetor {
+    position: relative;
+    height: 5vh;
+    display: block;
+
+    background: #85907A;
+    color: #fff;
+}
+
+.cargoLabel {
+    position: relative;
+    display: block;
+
+    font-family: 'Glory', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+
+.inputCargo {
+    position: relative;
+    width: 45vw;
+    height: 5vh;
+    
+    background: #85907A;
+    color: #fff;
+}
+
+.adicionarButton {
+    position: relative;
+    width: 9vw;
+    height: 5vh;
+    margin-top: 5vh;
+    
+    font-family: 'Glory', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    
+    color: #FFFFFF;
+}
+
+.salvarButton {
+    position: relative;
+    float: right;
+    width: 9vw;
+    height: 6vh;
+    /* top: 135px; */
+
+    display: block;
+    
+    background: #9ac2c9;
+}
+
+.ant-form-item-label > label {
+    color: #fff;
+}
+
+.saveDiv {
+    row-gap: 0px;
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
