@@ -1,8 +1,9 @@
-.majorContainer {
-    position: static;
-    width: 100vw;
-    height: 100vh;
-    
-    background: #9AC2C9
+@import "../colors.css";
 
+.majorContainer {
+  position: static;
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--darkBackground);
 }

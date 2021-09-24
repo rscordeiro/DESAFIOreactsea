@@ -1,115 +1,138 @@
+@import "../colors.css";
 
 .edicaoContent {
-    position: absolute;
-    width: 60vw;
-    height: 70vh;
-    left: 35vw;
-    top: 22.5vh;
-    padding: 0 25px;
-    padding-top: 15px;
-    
-    background: #4A5043;
+  position: absolute;
+  width: 60vw;
+  height: 70vh;
+  left: 35vw;
+  top: 22.5vh;
+  padding: 0 25px;
+  padding-top: 15px;
+
+  background: var(--darkElements);
+  border-radius: 15px;
 }
 
 .cargoGroup {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .criarTitle {
-    position: relative;
-    width: 40vw;
-    height: 2rem;
-    
-    font-family: 'Glory', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 42px;
-    
-    color: #fff;
+  position: relative;
+  width: 40vw;
+  height: 2rem;
+
+  font-family: "Glory", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: var(--darkText);
 }
 
 .nomeLabel {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 
-    font-family: 'Glory', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #fff;
+  font-family: "Glory", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .inputSetor {
-    position: relative;
-    height: 5vh;
-    display: block;
+  position: relative;
+  height: 5vh;
+  display: block;
 
-    background: #85907A;
-    color: #fff;
+  background: var(--darkNestedElements);
+  color: var(--darkBackground);
+  font-weight: bold;
+
+  border-radius: 5px;
 }
 
 .cargoLabel {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 
-    font-family: 'Glory', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #000000;
+  font-family: "Glory", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .inputCargo {
-    position: relative;
-    width: 45vw;
-    height: 5vh;
-    
-    background: #85907A;
-    color: #fff;
+  position: relative;
+  width: 45vw;
+  height: 5vh;
+
+  background: var(--darkNestedElements);
+  color: var(--darkBackground);
+  font-weight: bold;
+
+  border-radius: 5px;
 }
 
 .adicionarButton {
-    position: relative;
-    width: 9vw;
-    height: 5vh;
-    margin-top: 5vh;
-    
-    font-family: 'Glory', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    
-    color: #FFFFFF;
+  position: relative;
+  width: 9vw;
+  height: 5vh;
+  margin-top: 5vh;
+
+  font-family: "Glory", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  background-color: var(--darkBackground);
+  color: var(--darkText);
+
+  border-radius: 5px;
+  border: none;
+}
+
+.adicionarButton:hover {
+  background-color: var(--darkNestedElements);
+  color: var(--darkBackground);
 }
 
 .salvarButton {
-    position: relative;
-    float: right;
-    width: 9vw;
-    height: 6vh;
-    /* top: 135px; */
+  position: relative;
+  float: right;
+  width: 9vw;
+  height: 6vh;
+  display: block;
 
-    display: block;
-    
-    background: #9ac2c9;
+  font-weight: bold;
+
+  background-color: var(--darkBackground);
+  color: var(--darkText);
+
+  border-radius: 5px;
+  border: none;
+}
+
+.salvarButton:hover {
+  background-color: var(--darkNestedElements);
+  color: var(--darkBackground);
 }
 
 .ant-form-item-label > label {
-    color: #fff;
+  color: var(--darkText);
+  font-weight: bold;
 }
 
 .saveDiv {
-    row-gap: 0px;
-    /* position: relative; */
-    position: absolute;
-    bottom: 0;
-    right: 25px;
+  row-gap: 0px;
+  /* position: relative; */
+  position: absolute;
+  bottom: 0;
+  right: 25px;
 }

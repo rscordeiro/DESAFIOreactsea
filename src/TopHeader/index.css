@@ -1,53 +1,54 @@
+@import "../colors.css";
+
 .logoDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 26px 33px;
-    
-    position: absolute;
-    width: 7%;
-    height: 14%;
-    left: 3.5vw;
-    top: 2vh;
-    
-    background: #4a5043;
-    color: #ffcb47;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 33px;
+
+  position: absolute;
+  width: 7%;
+  height: 14%;
+  left: 3.5vw;
+  top: 2vh;
+
+  background: var(--darkElements);
+  color: var(--darkText);
+  border-radius: 15px;
 }
 
 .iconTitle {
-    position: static;
-    left: 29.92%;
-    right: 29.92%;
-    top: 62.26%;
-    bottom: 24.53%;
-    
-    font-family: 'Glory', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-    
-    
-    color: #fff;
+  position: static;
+  left: 29.92%;
+  right: 29.92%;
+  top: 62.26%;
+  bottom: 24.53%;
+
+  font-family: "Glory", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  color: var(--darkText);
 }
 
 .iconic {
-    position: static;
-    left: 41.39%;
-    right: 41.39%;
-    top: 24.53%;
-    bottom: 51.89%;
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 15px 0px;
+  position: static;
+  left: 41.39%;
+  right: 41.39%;
+  top: 24.53%;
+  bottom: 51.89%;
 
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 15px 0px;
 }
 
 .ant-layout-header {
-    height: 0;
-    background: #fff;
+  height: 0;
+  background: var(--darkText);
 }
