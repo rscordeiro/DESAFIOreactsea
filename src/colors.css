@@ -1,6 +1,6 @@
 :root {
-  --darkBackground: #090b0a;
-  --darkElements: #4d5651;
-  --darkNestedElements: #b0bfb6;
-  --darkText: #f0f7f4;
+  --background: #090b0a;
+  --elements: #4d5651;
+  --nestedElements: #b0bfb6;
+  --text: #f0f7f4;
 }

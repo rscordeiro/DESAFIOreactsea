@@ -1,5 +1,17 @@
 @import "../colors.css";
 
+.switchButton {
+  display: flex;
+
+  position: absolute;
+  left: 92vw;
+  top: 8vh;
+}
+
+.ant-switch {
+  background-color: var(--nestedElements);
+}
+
 .logoDiv {
   display: flex;
   flex-direction: column;
@@ -13,8 +25,8 @@
   left: 3.5vw;
   top: 2vh;
 
-  background: var(--darkElements);
-  color: var(--darkText);
+  background: var(--elements);
+  color: var(--text);
   border-radius: 15px;
 }
 
@@ -28,11 +40,10 @@
   font-family: "Glory", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  /* identical to box height */
+  font-size: 1rem;
+  line-height: 1rem;
 
-  color: var(--darkText);
+  color: var(--text);
 }
 
 .iconic {
@@ -50,5 +61,5 @@
 
 .ant-layout-header {
   height: 0;
-  background: var(--darkText);
+  background: var(--text);
 }

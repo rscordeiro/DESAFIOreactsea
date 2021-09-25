@@ -9,7 +9,7 @@
   padding: 0 25px;
   padding-top: 15px;
 
-  background: var(--darkElements);
+  background: var(--elements);
   border-radius: 15px;
 }
 
@@ -30,7 +30,7 @@
   font-size: 36px;
   line-height: 42px;
 
-  color: var(--darkText);
+  color: var(--text);
 }
 
 .nomeLabel {
@@ -49,8 +49,8 @@
   height: 5vh;
   display: block;
 
-  background: var(--darkNestedElements);
-  color: var(--darkBackground);
+  background: var(--nestedElements);
+  color: var(--background);
   font-weight: bold;
 
   border-radius: 5px;
@@ -72,8 +72,8 @@
   width: 45vw;
   height: 5vh;
 
-  background: var(--darkNestedElements);
-  color: var(--darkBackground);
+  background: var(--nestedElements);
+  color: var(--background);
   font-weight: bold;
 
   border-radius: 5px;
@@ -91,16 +91,16 @@
   font-size: 12px;
   line-height: 14px;
 
-  background-color: var(--darkBackground);
-  color: var(--darkText);
+  background-color: var(--background);
+  color: var(--text);
 
   border-radius: 5px;
   border: none;
 }
 
 .adicionarButton:hover {
-  background-color: var(--darkNestedElements);
-  color: var(--darkBackground);
+  background-color: var(--nestedElements);
+  color: var(--background);
 }
 
 .salvarButton {
@@ -112,20 +112,20 @@
 
   font-weight: bold;
 
-  background-color: var(--darkBackground);
-  color: var(--darkText);
+  background-color: var(--background);
+  color: var(--text);
 
   border-radius: 5px;
   border: none;
 }
 
 .salvarButton:hover {
-  background-color: var(--darkNestedElements);
-  color: var(--darkBackground);
+  background-color: var(--nestedElements);
+  color: var(--background);
 }
 
 .ant-form-item-label > label {
-  color: var(--darkText);
+  color: var(--text);
   font-weight: bold;
 }
 
@@ -135,4 +135,9 @@
   position: absolute;
   bottom: 0;
   right: 25px;
+}
+
+.ant-input::placeholder {
+  color: var(--background);
+  opacity: 0.4;
 }

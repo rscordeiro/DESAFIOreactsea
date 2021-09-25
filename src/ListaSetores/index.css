@@ -9,7 +9,7 @@
   padding: 0 25px;
   padding-top: 15px;
 
-  background: var(--darkElements);
+  background: var(--elements);
   border-radius: 15px;
 }
 
@@ -28,19 +28,19 @@ li {
 }
 
 .ant-collapse {
-  background-color: var(--darkNestedElements);
-  border-color: var(--darkBackground);
+  background-color: var(--nestedElements);
+  border-color: var(--background);
   border-radius: 5px;
 }
 
 .ant-collapse-content {
-  background-color: var(--darkNestedElements);
-  border-top: 1px solid var(--darkBackground);
+  background-color: var(--nestedElements);
+  border-top: 1px solid var(--background);
   border-radius: 5px;
 }
 
 .ant-collapse > .ant-collapse-item {
-  border-bottom: 1px solid var(--darkBackground);
+  border-bottom: 1px solid var(--background);
 }
 
 .setoresTitle {
@@ -54,9 +54,9 @@ li {
   font-size: 36px;
   line-height: 42px;
 
-  color: var(--darkText);
+  color: var(--text);
 }
 
 .ant-collapse > .ant-collapse-item > .ant-collapse-header {
-  color: var(--darkBackground);
+  color: var(--background);
 }
