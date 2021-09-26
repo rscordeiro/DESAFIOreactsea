@@ -1,4 +1,4 @@
-import { Form, Button, Input, Tag } from 'antd';
+import { Form, Button, Input, Tag, Modal } from 'antd';
 import { useState } from 'react';
 import './index.css';
 import { addSetor, editSetor } from './_actions';
@@ -15,6 +15,20 @@ function Edicao (props) {
     const [ cargosDeletados, setCargosDeletados ] = useState([]); 
 
     const [ setorSelected, setSetorSelected ] = useState([]);
+
+    const [ isModalVisible, setIsModalVisible ] = useState(false);
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    }
+
+    const modalOkHandler = () => {
+        setIsModalVisible(false);
+    }
+
+    const modalCancelHandler = () => {
+        setIsModalVisible(false);
+    }
 
     useEffect(() => {
         setSetorSelected(props.setorSelected);
@@ -41,17 +55,21 @@ function Edicao (props) {
     }
 
     const addCargo = (cargo) => {
-        if (setorSelected.length > 0) {
-            setNovosCargos([...novosCargos, cargo])
+        if(props.cargos.some(uniqueCargo => uniqueCargo.nome_cargo === cargo) || cargos.includes(cargo)) {
+            showModal();
+        } else {
+            if (setorSelected.length > 0) {
+                console.log("getting here");
+                setNovosCargos([...novosCargos, cargo])
+            }
+            setCargos([...cargos, cargo]);
+            setCargo('');
+            form.setFieldsValue({"cargos": ""});
         }
-        setCargos([...cargos, cargo]);
-        setCargo('');
-        form.setFieldsValue({"cargos": ""});
     }
 
     const deleteCargo = (cargo) => {
         setCargos(cargos.filter((cargoItem) => cargoItem !== cargo));
-        console.log(props.cargos);
         console.log(props.cargos.filter(cargo => cargo.nome_cargo == cargo));
         if(setorSelected.length > 0){
             setCargosDeletados(props.cargos.filter(cargo => cargo.nome_cargo === cargo));
@@ -86,6 +104,9 @@ function Edicao (props) {
                     >
                         Adicionar
                     </Button>
+                    <Modal title="Cargo Repetido" visible={isModalVisible} onOk={modalOkHandler} onCancel={modalCancelHandler}>
+                        <p>Por favor insira apenas cargos novos no cadastro.</p>
+                    </Modal>
                     </div>
            
                     {                        

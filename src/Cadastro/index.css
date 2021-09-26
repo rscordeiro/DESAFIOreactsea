@@ -141,3 +141,41 @@
   color: var(--background);
   opacity: 0.4;
 }
+
+.ant-modal {
+  font-family: "Glory", sans-serif;
+}
+
+.ant-modal-header {
+  border-radius: 10px 10px 0 0;
+  background-color: var(--elements);
+  color: var(--text);
+  border-bottom: none;
+}
+
+.ant-modal-title {
+  color: var(--text);
+}
+
+.ant-modal-content {
+  border-radius: 10px;
+  background-color: var(--elements);
+  color: var(--text);
+}
+
+.ant-modal-footer {
+  border-top: none;
+}
+
+.ant-modal-footer .ant-btn-primary {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.ant-modal-footer .ant-btn {
+  border-radius: 5px;
+}
+
+.ant-modal-close {
+  color: var(--text);
+}
