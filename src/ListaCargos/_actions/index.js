@@ -11,7 +11,7 @@ export function getCargos(dispatch) {
 
 }
 
-export function postCargos (dispatch, data) {
+export function postCargos(dispatch, data) {
     Axios.post("http://localhost:3000/cargos", data)
     .then((response) => {
         dispatch({

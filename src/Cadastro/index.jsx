@@ -5,6 +5,7 @@ import { addSetor, editSetor } from './_actions';
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { deleteCargoObj } from '../ListaCargos/_actions';
 
 
 function Edicao (props) {
@@ -30,6 +31,10 @@ function Edicao (props) {
         setIsModalVisible(false);
     }
 
+    //  const refreshScreen = () => {
+    //      setSetorSelected([]);  
+    //  }
+
     useEffect(() => {
         setSetorSelected(props.setorSelected);
         if(props.setorSelected.length > 0) {
@@ -52,6 +57,7 @@ function Edicao (props) {
         form.setFieldsValue({"nome_setor": ""});
         setCargos([]);
         setCargo('');
+        setSetorSelected([]);
     }
 
     const addCargo = (cargo) => {
@@ -68,11 +74,11 @@ function Edicao (props) {
         }
     }
 
-    const deleteCargo = (cargo) => {
-        setCargos(cargos.filter((cargoItem) => cargoItem !== cargo));
-        console.log(props.cargos.filter(cargo => cargo.nome_cargo == cargo));
+    const deleteCargo = (cargoD) => {
         if(setorSelected.length > 0){
-            setCargosDeletados(props.cargos.filter(cargo => cargo.nome_cargo === cargo));
+            setCargosDeletados(props.cargos.filter(cargo => cargo.nome_cargo === cargoD));
+        } else {
+            setCargos(props.cargos.filter((cargoItem) => cargoItem !== cargoD));
         }
     }
 

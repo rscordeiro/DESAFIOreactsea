@@ -35,8 +35,16 @@
       "nome_cargo": "estagiário(a) do RH"
     },
     {
-      "nome_cargo": "teste3",
+      "nome_cargo": "teste2",
       "id": 5
+    },
+    {
+      "nome_cargo": "teste2",
+      "id": 6
+    },
+    {
+      "nome_cargo": "teste2",
+      "id": 7
     }
   ]
 }
